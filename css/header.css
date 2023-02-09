@@ -1,0 +1,84 @@
+.header {
+    display: flex;
+    justify-content: space-between;  
+    flex: 1; 
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    
+}
+
+.sing-in__get-started {
+    display: flex;
+    align-items: center;
+}
+
+.logo_in-header {
+    display: flex;
+    align-items: center;
+    padding-right: 41px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.course-topics__what-students-say {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 294px;
+}
+
+.h3--logo {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 30px;
+    padding-left: 12px;
+}
+
+.button_in_header {
+    width: 147px;
+    height: var(--small-haight-of-button);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    margin-left: 42px;
+}
+
+
+.link {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.link:hover {
+    color: var(--light-purple);
+}
+
+@media screen and (max-width: 950px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .logo_in-header {
+        padding-right: 0;
+        justify-content: center;
+    }
+
+    .header-navigation {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .header-navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
