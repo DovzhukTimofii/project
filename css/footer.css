@@ -19,7 +19,7 @@
     padding-left: 38px;
 }
 
-.button_in_input {
+.subscribe-font {
     height: var(--small-haight-of-button);
     width: 141px;
     font-weight: 700;
@@ -36,17 +36,17 @@
 }
 
 
-.link_in_footer {
+.footer-link-font {
     font-weight: 400;
     font-size: 16px;
     line-height: 35px;
 }
 
-.link_in_footer:hover {
+.footer-link-font:hover {
     color: var(--light-purple);
 }
 
-.h4--in-footer {
+.footer-span-font {
     font-weight: 700;
     font-size: 16px;
     line-height: 35px;

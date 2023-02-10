@@ -6,7 +6,7 @@
     padding-right: 10%;
     padding-top: 18px;
     padding-bottom: 18px;
-    
+    align-self: center;
 }
 
 .sing-in__get-started {
@@ -17,7 +17,7 @@
 .logo_in-header {
     display: flex;
     align-items: center;
-    padding-right: 41px;
+    padding-right: 80px;
 }
 
 .header-content {
