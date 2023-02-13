@@ -1,12 +1,13 @@
-.header {
-    display: flex;
-    justify-content: space-between;  
+.header { 
     flex: 1; 
     padding-left: 10%;
     padding-right: 10%;
     padding-top: 18px;
     padding-bottom: 18px;
-    align-self: center;
+}
+
+.header__flex {
+    display: flex;
 }
 
 .sing-in__get-started {
@@ -14,7 +15,7 @@
     align-items: center;
 }
 
-.logo_in-header {
+.header__logo {
     display: flex;
     align-items: center;
     padding-right: 80px;
@@ -33,14 +34,14 @@
     width: 294px;
 }
 
-.h3--logo {
+.span__logo {
     font-weight: 800;
     font-size: 24px;
     line-height: 30px;
     padding-left: 12px;
 }
 
-.button_in_header {
+.header__button {
     width: 147px;
     height: var(--small-haight-of-button);
     font-size: 16px;
@@ -65,13 +66,21 @@
         flex-direction: column;
     }
 
-    .logo_in-header {
+    .header__logo {
         padding-right: 0;
         justify-content: center;
     }
 
     .header-navigation {
         width: auto;
+    }
+
+    .header-content {
+        width: auto;
+    }
+
+    .header__flex {
+        display: unset;
     }
 }
 
