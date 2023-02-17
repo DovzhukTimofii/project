@@ -1,12 +1,9 @@
-.header { 
-    flex: 1; 
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 18px;
-    padding-bottom: 18px;
+.header {
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
-.header__flex {
+.header__inner {
     display: flex;
 }
 
@@ -18,54 +15,48 @@
 .header__logo {
     display: flex;
     align-items: center;
-    padding-right: 80px;
 }
 
-.header-content {
+.header__content {
     display: flex;
-    justify-content: space-between;
-    width: 80%;
-}
-
-.course-topics__what-students-say {
-    display: flex;
+    flex: 1;
+    padding-left: 10px;
     align-items: center;
-    justify-content: space-between;
-    width: 294px;
 }
 
-.span__logo {
+
+
+@media screen and (min-width: 992px){
+    .header__content {
+        padding-left: 100px;
+    }
+}
+
+.header__nav {
+    flex: 1;
+}
+
+.header__nav-list {
+    display: flex;
+    gap: 50px;
+}
+
+.header__logo-text {
     font-weight: 800;
     font-size: 24px;
     line-height: 30px;
     padding-left: 12px;
 }
 
-.header__button {
-    width: 147px;
-    height: var(--small-haight-of-button);
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 20px;
-    margin-left: 42px;
+.header__actions a {
+    margin-right: 50px;
 }
 
-
-.link {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-}
-
-.link:hover {
-    color: var(--light-purple);
+#burger, [for=burger] {
+    display: none;
 }
 
 @media screen and (max-width: 950px) {
-    .header {
-        flex-direction: column;
-    }
-
     .header__logo {
         padding-right: 0;
         justify-content: center;
@@ -81,6 +72,57 @@
 
     .header__flex {
         display: unset;
+    }
+
+    .header__inner {
+        display: none;
+    }
+
+    .button--small {
+        display: none;
+    }
+
+    .header__logo {
+        justify-content: start;
+        margin-bottom: 15px;
+    }
+
+    .header__actions {
+        margin-top: 16px;
+    }
+
+    .header__content {
+        flex-direction: column;
+        padding-left: 0px;
+        align-items: start;
+    }
+
+    .header__nav-list {
+        gap: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-nav__box {
+        width: 149px;
+        background: var(--baground-light-purple);
+        border-radius: 11px;
+        padding-right: 20px;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-bottom: 20px;
+    }
+
+    [for=burger] {
+        display: block;
+        width: 30px;
+        text-align: center;
+        margin-left: 60px;
+        font-size: 26px;
+    }
+
+    #burger:checked + label + .header__inner {
+        display: block;
     }
 }
 

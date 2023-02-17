@@ -7,7 +7,7 @@
     padding-top: 64px;
 }
 
-.form__input {
+.search-form {
     height: var(--big-haight-of-button);
     width: 83%;
     background: var(--white);
@@ -19,15 +19,15 @@
     padding-left: 38px;
 }
 
-.subscribe-font {
+.search-form-button {
     height: var(--small-haight-of-button);
     width: 141px;
-    font-weight: 700;
+    font-weight: var(--font-weight-larg);
     font-size: 16px;
     line-height: 20px;
 }
 
-.input_in_footer {
+.search-form__input {
     width: 70%;
     height: 46px;
     border: none;
@@ -35,28 +35,12 @@
     font-style: normal;
 }
 
-
-.footer-link-font {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 35px;
-}
-
-.footer-link-font:hover {
-    color: var(--light-purple);
-}
-
-.footer-span-font {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 35px;
-}
-
-.input_in_footer:focus {
+.search-form__input:focus {
     outline:none;
 }
 
-.logo_and_input {
+
+.footer__search-form {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -80,8 +64,4 @@
     flex-wrap: wrap;
     max-height: 140px;
     width: 100%;
-}
-
-.margrin_of_help-menu {
-    margin-left: 39px;
 }

@@ -2,16 +2,20 @@
     --dark-blue: #001A49;
     --light-purple: #CD10FF;
     --white: white;
+    --baground-gray: rgba(231, 234, 235, 1);
+    --baground-yellow: linear-gradient(35.71deg, #FFD7A9 9.11%, #FFAE70 71.64%);
     --baground-purple: linear-gradient(44.11deg, #CD10FF 15.75%, #9F06FF 84.63%);
     --baground-dark-blue: linear-gradient(44.11deg,rgb(0, 26, 73) 15.75%,rgb(3, 41, 110) 84.63%);
     --baground-light-purple:  #9f06ff0d 84.63%;
     --small-haight-of-button: 50px;
     --big-haight-of-button: 66px;
+    --border-radius-mini: 21px;
     --border-radius-standart: 33px;
-    --font-style: normal;
+    --border-radius-circle: 50%;
+    --font-weight-larg: 700;
+    --font-weight-small: 400;
     --font-mulish: 'Mulish', sans-serif;
     --font-montserrat: 'Montserrat', sans-serif;
-    --font-waight-montserrat: 700;
 }
 
 
@@ -21,10 +25,16 @@ body {
     display: flex;
     flex-direction: column;
     font-family: var(--font-mulish);
+    color: var(--dark-blue);
 }
 
 li {
     list-style-type: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
 }
 
 .button {
@@ -32,9 +42,7 @@ li {
     border: none;
     background: var(--baground-purple);
     color: var(--white);
-    font-family: var(--font-mulish);
-    font-style: var(--font-style);
-    font-weight: var(--font-waight-montserrat);
+    font-weight: var(--font-weight-larg);
     cursor: pointer;
 }
 
@@ -44,33 +52,68 @@ li {
     transition: 15s;
 }
 
-.span,
-.a,
-.p {
-    font-family: var(--font-mulish);
-    font-style: var(--font-style);
-    color: var(--dark-blue);
+.button--small {
+    /*width: 147px;*/
+    height: var(--small-haight-of-button);
+    padding: 15px 30px;
+    font-size: 16px;
+    /*font-weight: 700;*/
+    /*line-height: 20px;*/
+    /*margin-left: 42px;*/
 }
 
-.h1 {
-    font-family: var(--font-montserrat);
-    font-style: var(--font-style);
+.a {
     color: var(--dark-blue);
-    font-weight: var(--font-waight-montserrat);
-    font-size: 60px;
-    line-height: 68px;
+    text-decoration: none;
 }
 
 
+.h1,
 .h2,
 .h3 {
     font-family: var(--font-montserrat);
-    font-style: var(--font-style);
     color: var(--dark-blue);
-    font-weight: var(--font-waight-montserrat);
+    font-weight: var(--font-weight-larg);
+    line-height: 1.4;
+    margin: 0;
+}
+
+.h1 {
+    font-size: 60px;
+}
+
+.h2 {
     font-size: 46px;
-    line-height: 56px
+}
+
+.h3 {
+    font-size: 32px;
 }
 
 
 
+.fat-link {
+    font-weight: var(--font-weight-larg);
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.fat-link:hover {
+    color: var(--light-purple);
+}
+
+.link {
+    font-weight: var(--font-weight-small);
+    font-size: 16px;
+    line-height: 35px;
+}
+
+.link:hover {
+    color: var(--light-purple);
+}
+
+.list-main-element {
+    font-weight: var(--font-weight-larg);
+    font-size: 16px;
+    line-height: 35px;
+}
