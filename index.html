@@ -10,11 +10,32 @@
 </head>
 <body>
 
+    
+
+
+
 <header class="header">
-    <div class="container menu-nav__box">
-        <input type="checkbox" id="burger">
-        <label for="burger">☰</label>
-        <div class="header__inner">
+    <div class="container" id="close-menu-nav__box">
+        <div>
+            <button id="burger-Btn">☰</button>
+            <nav id="burger-content">
+                <div id="burger__logo">
+                    <img src="./icons/Logo.svg" alt="Logo">
+                    <span class="header__logo-text">nocode</span>
+                </div>
+                <ul>
+                    <li><a class="a fat-link" href="https://www.youtube.com/watch?v=G510jeWiaV0">Course topics</a></li>
+                    <li><a class="a fat-link" href="https://www.youtube.com/watch?v=G510jeWiaV0">What students say</a></li>
+                    <li><a class="a fat-link" href="https://www.youtube.com/watch?v=G510jeWiaV0">Sign in</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        
+      
+
+        
+        <div class="header__inner" id="content-box">
             <div class="header__logo">
                 <img src="./icons/Logo.svg" alt="Logo">
                 <span class="header__logo-text">nocode</span>
@@ -82,7 +103,8 @@
         <div class="purple__circle">
             <div class="small-yellow__circle"></div>
         </div> 
-        <div class="information-table">
+        <div class="half__circle"></div>
+        <div class="container information-table" id="clean-container__information-table">
             <div class="information-table__box">
                 <span class="information-table__box__number">12,201</span>
                 <span class="information-table__box__text-content">happy students</span>
@@ -98,12 +120,88 @@
                 <span class="information-table__box__text-content">5 star reviews</span>
             </div>
         </div>
+    </div>
+
+    <div class="advertising">
+        <div class="advertising__main-text">
+            <h2 class="h2">What you'll learn</h2>
+            <p class="p">Create beautiful webflow sites with flowbase. Clone for
+                free and get started building a site today.</p>
+        </div>
+
+        <div class="container  advertising__box_for_cards" id="clean-container__advertising__box">
+            <div class="advertising__card">
+                <div class="advertising__card-log">
+                    <img src="./img/ico.png" alt="icon">
+                </div>
+                <div class="advertising__card-text">
+                    <h3 class="h3">Analyzing User Data</h3>
+                    <p class="p-mini">Who are you developing for? How will they use your design? Building user personas can answer these.</p>
+                </div>
+                <div class="advertising__card-button">
+                    <button class="button button--long">
+                        <p class="button--long__text">6 videos</p>
+                        <div class="mini-stick"></div>
+                        <p class="button--long__text">4.5 hours</p>
+                    </button>
+                </div>
+            </div>
+            <div class="advertising__card">
+                <div class="advertising__card-log">
+                    <img src="./img/ico.png" alt="icon">
+                </div>
+                <div class="advertising__card-text">
+                    <h3 class="h3">User Persona</h3>
+                    <p class="p-mini">Who are you developing for? How will they use your design? Building user personas can answer these.</p>
+                </div>
+                <div class="advertising__card-button">
+                    <button class="button button--long">
+                        <p class="button--long__text">6 videos</p>
+                        <div class="mini-stick"></div>
+                        <p class="button--long__text">4.5 hours</p>
+                    </button>
+                </div>
+            </div>
+            <div class="advertising__card">
+                <div class="advertising__card-log">
+                    <img src="./img/ico.png" alt="icon">
+                </div>
+                <div class="advertising__card-text">
+                    <h3 class="h3">Prototyping</h3>
+                    <p class="p-mini">Who are you developing for? How will they use your design? Building user personas can answer these.</p>
+                </div>
+                <div class="advertising__card-button">
+                    <button class="button button--long">
+                        <p class="button--long__text">6 videos</p>
+                        <div class="mini-stick"></div>
+                        <p class="button--long__text">4.5 hours</p>
+                    </button>
+                </div>
+            </div>
+            <div class="advertising__card">
+                <div class="advertising__card-log">
+                    <img src="./img/ico.png" alt="icon">
+                </div>
+                <div class="advertising__card-text">
+                    <h3 class="h3">Storyboarding</h3>
+                    <p class="p-mini">Who are you developing for? How will they use your design? Building user personas can answer these.</p>
+                </div>
+                <div class="advertising__card-button">
+                    <button class="button button--long">
+                        <p class="button--long__text">6 videos</p>
+                        <div class="mini-stick"></div>
+                        <p class="button--long__text">4.5 hours</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+       
 
     </div>
 </main>
 
 <footer class="footer">
-    <div class="container">
+    <div class="container" id="clean-container__footer">
         <div class="footer__search-form">
             <div class="footer-logo"><img src="./icons/Logo.svg" alt="Logo"></div>
             <form class="search-form">
@@ -151,233 +249,6 @@
         </div>
     </div>
 </footer>
-
-
-<!-- <main>
-    <div class="container-field ">
-        <div class="row">
-            <div class="col"></div>
-        </div>
-        <div class="row">
-            <div class="col"></div>
-        </div>
-
-    </div>
-
-
-
-        <div class="sideShape"><img src="./img/Side Shape.png" alt="Side Shape">
-            <div class="numberOFHappyStudents">
-                <div>
-                    <div class="number">12,201</div>
-                    <div class="students">happy students</div>
-                </div>
-                <div class="lectors">
-                    <div class="number">12,201</div>
-                    <div class="students">happy students</div>
-                </div>
-                <div>
-                    <div class="number">12,201</div>
-                    <div class="students">happy students</div>
-                </div>
-           </div>
-        </div>
-        <div class="Side_Shape_Circle"><img src="./img/Side Shape Circle.png" alt=""></div>
-    </div>
-    <div class="menuWithPryse">
-        <div>
-            <h2 class="whatYouLearn">What you'll learn</h2>
-            <p class="Create_webflow">Create beautiful webflow sites with flowbase. Clone for</p>
-            <p class="for_free_and">for free and get started building a site today.</p>
-        </div>
-
-        <div class="card">
-            <div class="positionOfLogo"><img src="./img/ico.png" alt=""></div>
-            <div class="positionOfTextInCard">
-                <div class="textInPryseMenu"">Analyzing User Data</div>
-                <div class="miniTextInPryseMenu">Who are you developing for? How will they use your design? Building user personas can answer these.</div>
-            </div>
-            <button class='buttonInCard'>6 videos                 4.5hours</button>
-        </div>
-        <div class="card">
-            <div class="positionOfLogo"><img src="./img/ico.png" alt=""></div>
-            <div class="positionOfTextInCard">
-                <div class="textInPryseMenu"">User Persona</div>
-                <div class="miniTextInPryseMenu">Who are you developing for? How will they use your design? Building user personas can answer these.</div>
-            </div>
-            <button class='buttonInCard'>6 videos                 4.5hours</button>
-        </div>
-        <div class="card">
-            <div class="positionOfLogo"><img src="./img/ico.png" alt=""></div>
-            <div class="positionOfTextInCard">
-                <div class="textInPryseMenu"">Prototyping</div>
-                <div class="miniTextInPryseMenu">Who are you developing for? How will they use your design? Building user personas can answer these.</div>
-            </div>
-            <button class='buttonInCard'>6 videos                 4.5hours</button>
-        </div>
-        <div class="card">
-            <div class="positionOfLogo"><img src="./img/ico.png" alt=""></div>
-            <div class="positionOfTextInCard">
-                <div class="textInPryseMenu"">Storyboarding</div>
-                <div class="miniTextInPryseMenu">Who are you developing for? How will they use your design? Building user personas can answer these.</div>
-            </div>
-            <button class='buttonInCard'>6 videos                 4.5hours</button>
-        </div>
-
-
-
-    </div>
-    <div class="flex-box_for_instructor">
-        <div class="positionOfText">
-            <h2 class="hi_I_am_David">Hi, I am David, your course instructor.</h2>
-            <p class="webflowSites">Create beautiful webflow sites with flowbase. Clone for
-            free and get started building a site today.</p>
-        </div>
-        <div><img src="./img/Instructor.png" alt=""></div>
-    </div>
-    <div>
-        <div class="fone">
-            <h2 class="whatMyStidentsSay">What my students say</h2>
-            <p class="create_custom_landing">Create custom landing pages with Shades that convert more visitors than any website—no coding required.</p>
-
-            <div class="container">
-                <div class="offer__advantages">
-                </div>
-                <div class="offer__slider">
-                    <div class="offer__slider-counter">
-
-                        <div id="current"></div>
-
-                        <span id="total"></span>
-                        <div class="offer__slider-next">
-
-                        </div>
-                    </div>
-                    <div class="offer__slider-wrapper">
-                        <div class="offer__slider-inner">
-                            <div class="offer__slide">
-                                <div class="firstCubick">
-                                    <p class="textInFirstCubick">“I waited to completely finish the course to rate it. This was my first approach to python, i am an excel and VBA user. The professor has an excellent way to explain it and a lot or order and organization. I really recommend it.”</p>
-                                    <div class="man"><img src="./img/man.png" alt="">
-                                        <div class="positionOfHenkFortuin">
-                                            <h3 class="henkFortuin">Henk Fortuin</h3>
-                                            <h4 class="founderOfCrips">Founder of Crips</h4>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="offer__slide">
-                                <div class="firstCubick">
-                                    <p class="textInFirstCubick">“I waited to completely finish the course to rate it. This was my first approach to python, i am an excel and VBA user. The professor has an excellent way to explain it and a lot or order and organization. I really recommend it.”</p>
-                                    <div class="man"><img src="./img/womanWithBlackHear.png" alt="">
-                                        <div class="positionOfHenkFortuin">
-                                            <h3 class="henkFortuin">Opi Watihana</h3>
-                                            <h4 class="founderOfCrips">Founder of Crips</h4>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="offer__slide">
-                                <div class="firstCubick">
-                                    <p class="textInFirstCubick">“I waited to completely finish the course to rate it. This was my first approach to python, i am an excel and VBA user. The professor has an excellent way to explain it and a lot or order and organization. I really recommend it.”</p>
-                                    <div class="man"><img src="./img/chinaWoman.png" alt="">
-                                        <div class="positionOfHenkFortuin">
-                                            <h3 class="henkFortuin">Annie Reyes</h3>
-                                            <h4 class="founderOfCrips">Founder of Crips</h4>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-    <div class="flex-container_for_coments">
-       <h2 class="frequentlyAsked">Frequently asked questions</h2>
-        <div class="firstOpenModal">
-            <h3 class="willIGetFull">Will I get full access to the course after purchasing?</h3>
-            <button class="buttonInOpenedModal"><img src="./icons/Arrow Pink.svg" alt=""></button>
-            <p class="Anim_pariatur">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
-
-        </div>
-        <div class="secondOpenModal">
-            <h3 class="do_you_give_money">Do you give money back guarantee?</h3>
-           <button class="firsTButtonInClousModal"><img src="./icons/Arrow Down.svg" alt=""></button>
-        </div>
-        <div class="secondOpenModal">
-            <h3 class="do_you_give_money">Do you offer a discount?</h3>
-            <button class="secondButtonInClousdModal"><img src="./icons/Arrow Down.svg" alt=""></button>
-        </div>
-        <div class="secondOpenModal">
-            <h3 class="do_you_give_money">Do you offer support after joining?</h3>
-            <button class="thirdButtonInClousdModal"><img src="./icons/Arrow Down.svg" alt=""></button>
-        </div>
-    </div>
-
-    <div class="someDiv">
-
-        <div class="flex-containerForLustText">
-            <div class="banar">
-                <h4 class="getDays">Get 30 Days Money Back Guarantee</h4>
-            </div>
-
-            <h2 class="ready_to_learn ">Ready to learn UX Design from the expert?</h2>
-           <button class="buttonNearFrom_Ready_to_learn">Get started</button>
-        </div>
-
-        <div class="positionOfSidePatternRight"><img src="./img/Side Pattern Right.png" alt=""></div>
-    </div>
-</main>
-
-<footer class="footer">
-    <div class="flex-container_for_input">
-        <div class="bolock_for_input">
-            <input type="text" class="input" placeholder="Stay in the loop  - sign up with your email">
-            <button class="buttonInIput">Subscribe</button>
-        </div>
-        <div class="positionOfLogoInHeader"><img src="./icons/LogoForHeader.svg" alt=""></div>
-    </div>
-
-    <menu class="flex-container_for_navigation">
-        <div class="positon_of_two-menu_blocks">
-            <ul>
-                <li class="helpMenu"><p class="helpMenu">Help menu</p></li>
-                <li class="helperMenuButton"><p>About</p></li>
-                <li class="helperMenuButton"><p>Features</p></li>
-                <li class="helperMenuButton"><p>Works</p></li>
-                <li class="helperMenuButton"><p>Career</p></li>
-            </ul>
-            <ul class="positionOfSecondButtonInHelper">
-                <li class="helperMenuButton"><p>contact</p></li>
-                <li class="helperMenuButton"><p>Help & Support</p></li>
-                <li class="helperMenuButton"><p>Privacy Policy</p></li>
-                <li class="helperMenuButton"><p>Terms & Conditions</p></li>
-            </ul>
-        </div>
-
-        <ul>
-            <li class="product"><h4>Product</h4></li>
-            <li class="helperMenuButton"><p>Essential Landing Page</p></li>
-            <li class="helperMenuButton"><p>Alpha Dashboard Pro</p></li>
-            <li class="helperMenuButton"><p>Karnel Admin Dashboard</p></li>
-            <li class="helperMenuButton"><p>Gray UI Kit</p></li>
-        </ul>
-    </menu>
-
-</footer>
--->
-
-
 <script src="js/index.js"></script>
 
 

@@ -9,7 +9,8 @@
 }
 
 .main-screen__content-box {
-    max-width: 464px;
+    max-width: 516px;
+    position: absolute;
 }
 
 .main-screen__content {
@@ -18,8 +19,8 @@
     height: calc(100vh - 100px);
     display: flex;
     align-items: center;
-    padding-top: 170px;
-    padding-bottom: 170px;
+    padding-top: 110px;
+    padding-bottom: 110px;
     padding-left: 130px;
 }
 
@@ -70,6 +71,29 @@
     
 }
 
+.stick {
+    width: 2px;
+    height: 100px;
+    background: var(--baground-gray);
+}
+
+.information-table {
+    border: 1px solid var(--baground-gray);
+    background: var(--white);
+    max-width: 1120px;
+    height: 172px;
+    border-radius: var(--border-radius-mini);
+    margin-top: -22px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    position: relative;
+    justify-self: revert;
+    align-self: center;
+}
+
 @media screen and (max-width: 992px) {
     .main-screen__content {
         border-radius: 0px;
@@ -87,6 +111,21 @@
     .main-screen--foto-box {
         flex-direction: column-reverse;
     }
+
+    .information-table {
+        width: 19%;
+        height: 500px;
+        margin-top: 0px;
+        flex-direction: column;
+        padding-top: 13px;
+        padding-bottom: 13px;
+    }
+
+    .stick {
+        width: 100px;
+        height: 2px;
+    }
+
 }
 
 .main-screen__video-container {
@@ -105,6 +144,7 @@
     }
 }
 
+
 .main-screen__video-container iframe {
     position: absolute;
     top: 0;
@@ -116,6 +156,7 @@
 .purple__circle {
     width: 288px;
     height: 288px;
+    position: absolute;
     border-radius: var(--border-radius-circle);
     background: var(--baground-purple);
     margin-left: -50px;
@@ -131,34 +172,15 @@
     border-radius: var(--border-radius-circle);
 }
 
-.information-table {
-    border: 1px solid var(--baground-gray);
-    background: var(--white);
-    max-width: 1120px;
-    width: 84%;
-    height: 172px;
-    border-radius: var(--border-radius-mini);
-    margin-top: -22px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-left: 30px;
-    padding-right: 30px;
-    position: absolute;
-    justify-self: revert;
-    align-self: center;
-}
+
 
 .information-block__students-numbers {
     display: flex;
     flex-direction: column;
+    padding-bottom: 200px;
 }
 
-.stick {
-    width: 2px;
-    height: 100px;
-    background: var(--baground-gray);
-}
+
 
 .information-table__box {
     display: flex;
@@ -176,3 +198,46 @@
     line-height: 50px;
     color: var(--dark-blue)
 }
+
+
+.half__circle {
+    border-radius: 100% 0 0 100% / 50% 0 0 50%;
+    background: var(--baground-yellow);
+    width: 192px;
+    height: 384px;
+    position: absolute;
+    align-self: flex-end;
+    margin-top: 14%;
+}
+
+.advertising {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.advertising__main-text {
+    width: 517px;
+    margin-bottom: 60px;
+}
+
+.advertising__card {
+    width: 100%;
+    height: 172px;
+    background: var(--baground-light-purple);
+    border-radius: var(--border-radius-mini);
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.advertising__card-text {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    max-width: 508px;
+}
+
