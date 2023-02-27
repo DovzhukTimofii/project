@@ -241,3 +241,12 @@
     max-width: 508px;
 }
 
+.instructor-information {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.instructor-information__text {
+    max-width: 560px;
+}

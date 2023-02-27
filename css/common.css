@@ -3,6 +3,7 @@
     --light-purple: #CD10FF;
     --white: white;
     --baground-gray: rgba(231, 234, 235, 1);
+    --baground-light-yellow: linear-gradient(35.71deg, #FFD7A9 9.11%, #FFAE70 71.64%);
     --baground-yellow: linear-gradient(35.71deg, #FFD7A9 9.11%, #FFAE70 71.64%);
     --baground-purple: linear-gradient(44.11deg, #CD10FF 15.75%, #9F06FF 84.63%);
     --baground-dark-blue: linear-gradient(44.11deg,rgb(0, 26, 73) 15.75%,rgb(3, 41, 110) 84.63%);
