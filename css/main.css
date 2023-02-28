@@ -19,8 +19,6 @@
     height: calc(100vh - 100px);
     display: flex;
     align-items: center;
-    padding-top: 110px;
-    padding-bottom: 110px;
     padding-left: 130px;
 }
 
@@ -89,7 +87,7 @@
     align-items: center;
     padding-left: 30px;
     padding-right: 30px;
-    position: relative;
+    position: sticky;
     justify-self: revert;
     align-self: center;
 }
@@ -113,7 +111,6 @@
     }
 
     .information-table {
-        width: 19%;
         height: 500px;
         margin-top: 0px;
         flex-direction: column;
@@ -249,4 +246,62 @@
 
 .instructor-information__text {
     max-width: 560px;
+}
+
+.button--long {
+    padding: 4px;
+    display: flex;
+    justify-content: space-around;
+    width: 278px;
+    border-radius: var(--border-radius-standart);
+    border: none;
+    background: var(--baground-purple);
+    color: var(--white);
+    font-weight: var(--font-weight-larg);
+}
+
+.button--long__text {
+    color: var(--white);
+    font-family: var(--font-mulish);
+    font-weight: var(--font-weight-small);
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.mini-stick {
+    background: #8639B5;
+    width: 1px;
+    height: 30px;
+    margin-top: 12px;
+}
+
+.advertising__card__main-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 83%;
+}
+
+@media screen and (max-width: 700px) {
+    .advertising__card__main-content {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .advertising__card {
+        height: 230px;
+    }
+
+}
+
+.instructor-information__img {
+    display: block;
+    width: 50%;
+}
+
+.instructor-information__img:after {
+    content: '';
+    display: block;
+    padding-top: 100%;
 }

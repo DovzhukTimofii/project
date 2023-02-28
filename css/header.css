@@ -5,7 +5,13 @@
 
 
 .header__inner {
-    display: flex;
+    display: none;
+}
+
+@media screen and (min-width: 950px) {
+    .header__inner {
+        display: flex;
+    }
 }
 
 .sing-in__get-started {
@@ -65,5 +71,24 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+}
+
+
+.last-button {
+    display: block;
+    height: var(--small-haight-of-button);
+    padding: 15px 30px;
+    font-size: 16px;
+    left: 75%;
+    top: 14px;
+    position: absolute;
+    min-width: 147px;
+}
+
+@media screen and (min-width: 950px) {
+    .last-button {
+        display: none;
     }
 }

@@ -63,29 +63,6 @@ ul {
     /*margin-left: 42px;*/
 }
 
-.button--long {
-    height: var(--big-haight-of-button);
-    padding: 4px;
-    display: flex;
-    justify-content: space-around;
-    width: 278px;
-}
-
-.button--long__text {
-    color: var(--white);
-    font-family: var(--font-mulish);
-    font-weight: var(--font-weight-small);
-    font-style: normal;
-    font-size: 16px;
-    line-height: 24px;
-}
-
-.mini-stick {
-    background: #8639B5;
-    width: 1px;
-    height: 30px;
-    margin-top: 12px;
-}
 
 .a {
     color: var(--dark-blue);
